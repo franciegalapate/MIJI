@@ -137,19 +137,3 @@ ProfileActivity
    - Connect a device or start an emulator, then click **Run**
 
 > **Note:** Camera capture and math recognition require a running backend server (CNN detector + socket layer). The UI is fully implemented; backend integration is marked with `TODO` comments throughout the source.
-
----
-
-## 🔧 Pending Integrations (TODOs)
-
-| Feature                        | File                    | Notes                                                         |
-| ------------------------------ | ----------------------- | ------------------------------------------------------------- |
-| CameraX live preview & capture | `ScanActivity.kt`       | Replace placeholder shutter with `imageCapture.takePicture()` |
-| Gallery image picker           | `ScanActivity.kt`       | Launch `ACTION_PICK` intent                                   |
-| CNN socket integration         | `ScanActivity.kt`       | Send `ImageProxy` to backend detector                         |
-| Answer validation              | `ScanResultActivity.kt` | Evaluate user input against computed result                   |
-| Step-by-step solution engine   | `ScanResultActivity.kt` | Generate and speak solution steps                             |
-| Speech-to-text answer input    | `ScanResultActivity.kt` | Launch `RecognizerIntent`                                     |
-| Module screens                 | `HomeActivity.kt`       | Launch `ModuleActivity` with module type                      |
-| Auth / session layer           | `ProfileActivity.kt`    | Plug in login, logout, and delete account                     |
-| Create / Join Lobby            | `MenuHelper.kt`         | Implement classroom session backend                           |
